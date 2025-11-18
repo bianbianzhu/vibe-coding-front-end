@@ -1,0 +1,134 @@
+/* Calendar Custom Styling - Following White Horse Coffee Style Guide */
+
+.booking-calendar .react-calendar {
+  width: 100%;
+  border: 1px solid #f0f0f0;
+  border-radius: 3px;
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: white;
+  padding: 20px;
+}
+
+/* Navigation */
+.booking-calendar .react-calendar__navigation {
+  display: flex;
+  height: 44px;
+  margin-bottom: 20px;
+}
+
+.booking-calendar .react-calendar__navigation button {
+  min-width: 44px;
+  background: none;
+  font-size: 16.8px;
+  font-weight: 600;
+  color: #2C2926;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s;
+}
+
+.booking-calendar .react-calendar__navigation button:enabled:hover,
+.booking-calendar .react-calendar__navigation button:enabled:focus {
+  color: #e1b384;
+  background: none;
+}
+
+.booking-calendar .react-calendar__navigation button:disabled {
+  color: #bdbdbd;
+  cursor: not-allowed;
+}
+
+/* Month View */
+.booking-calendar .react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14.4px;
+  font-weight: 600;
+  color: #6b6967;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.booking-calendar .react-calendar__month-view__weekdays__weekday {
+  padding: 10px 0;
+}
+
+.booking-calendar .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+/* Tiles (Days) */
+.booking-calendar .react-calendar__tile {
+  max-width: 100%;
+  padding: 15px 10px;
+  background: white;
+  text-align: center;
+  font-size: 16.8px;
+  color: #2C2926;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 2px;
+}
+
+.booking-calendar .react-calendar__tile:enabled:hover,
+.booking-calendar .react-calendar__tile:enabled:focus {
+  background: rgba(225, 179, 132, 0.05);
+  border-color: #e1b384;
+  color: #030302;
+}
+
+/* Today's date */
+.booking-calendar .react-calendar__tile--now {
+  background: #F7F9FA;
+  border-color: #f0f0f0;
+  font-weight: 600;
+}
+
+.booking-calendar .react-calendar__tile--now:enabled:hover,
+.booking-calendar .react-calendar__tile--now:enabled:focus {
+  background: rgba(225, 179, 132, 0.1);
+  border-color: #e1b384;
+}
+
+/* Selected date */
+.booking-calendar .react-calendar__tile--active {
+  background: #e1b384 !important;
+  color: #030302 !important;
+  border-color: #e1b384 !important;
+  font-weight: 600;
+}
+
+.booking-calendar .react-calendar__tile--active:enabled:hover,
+.booking-calendar .react-calendar__tile--active:enabled:focus {
+  background: #de8d3b !important;
+  border-color: #de8d3b !important;
+}
+
+/* Unavailable dates */
+.booking-calendar .react-calendar__tile:disabled,
+.booking-calendar .unavailable-date {
+  background: #f7f7f7;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
+.booking-calendar .react-calendar__tile:disabled:hover,
+.booking-calendar .unavailable-date:hover {
+  background: #f7f7f7;
+  border-color: transparent;
+}
+
+/* Neighboring months */
+.booking-calendar .react-calendar__month-view__days__day--neighboringMonth {
+  color: rgba(44, 41, 38, 0.35);
+}
+
+/* Weekend styling (optional subtle differentiation) */
+.booking-calendar .react-calendar__month-view__days__day--weekend {
+  color: #6b6967;
+}

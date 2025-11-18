@@ -1,26 +1,119 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Scrollbar */
+  --scrollbar-width: 0px;
+
+  /* Background Colors */
+  --COLOR-VIDEO-BG: #f2f2f2;
+  --COLOR-BG-BRIGHTER: #f2f2f2;
+  --COLOR-BG: #ffffff;
+  --COLOR-BG-ALPHA-25: rgba(255, 255, 255, 0.25);
+  --COLOR-BG-TRANSPARENT: rgba(255, 255, 255, 0);
+  --COLOR-BG-SECONDARY: #F7F9FA;
+  --COLOR-BG-SECONDARY-LIGHTEN: #ffffff;
+  --COLOR-BG-RGB: 255, 255, 255;
+
+  /* Text Colors */
+  --COLOR-TEXT-DARK: #030302;
+  --COLOR-TEXT: #2C2926;
+  --COLOR-TEXT-LIGHT: #6b6967;
+
+  /* Text Opacity Variations */
+  --COLOR-A35: rgba(44, 41, 38, 0.35);
+  --COLOR-A70: rgba(44, 41, 38, 0.7);
+  --COLOR-A75: rgba(44, 41, 38, 0.75);
+
+  /* Border Colors */
+  --COLOR-BORDER: rgb(240, 240, 240);
+  --COLOR-BORDER-LIGHT: #f6f6f6;
+  --COLOR-BORDER-HAIRLINE: #f7f7f7;
+  --COLOR-BORDER-DARK: #bdbdbd;
+
+  /* Primary Brand Colors */
+  --COLOR-PRIMARY: #e1b384;
+  --COLOR-PRIMARY-HOVER: #de8d3b;
+  --COLOR-PRIMARY-FADE: rgba(225, 179, 132, 0.05);
+  --COLOR-PRIMARY-FADE-HOVER: rgba(225, 179, 132, 0.1);
+  --COLOR-PRIMARY-LIGHT: #ffffff;
+  --COLOR-PRIMARY-OPPOSITE: #000000;
+
+  /* Link Colors */
+  --COLOR-LINK: #2c2926;
+  --COLOR-LINK-HOVER: rgba(44, 41, 38, 0.7);
+
+  /* Sale Colors */
+  --COLOR-SALE-BG: #f9dee5;
+  --COLOR-SALE-TEXT: #af7b88;
+
+  /* Shorthand Aliases */
+  --bg: var(--COLOR-BG);
+  --bg-accent: var(--COLOR-BG-SECONDARY);
+  --text-dark: var(--COLOR-TEXT-DARK);
+  --text: var(--COLOR-TEXT);
+  --text-light: var(--COLOR-TEXT-LIGHT);
+  --text-a35: var(--COLOR-A35);
+  --text-a70: var(--COLOR-A70);
+  --text-a75: var(--COLOR-A75);
+  --border: var(--COLOR-BORDER);
+  --primary: var(--COLOR-PRIMARY);
+  --primary-hover: var(--COLOR-PRIMARY-HOVER);
+
+  /* Layout */
+  --HEADER-HEIGHT: 84px;
+  --outer: 40px;
+  --gutter: 20px;
+
+  /* Border Radius */
+  --radius: 3px;
+  --btn-radius: 3px;
+
+  /* Button Spacing */
+  --btn-top: 10px;
+  --btn-left: 18px;
+
+  /* Font Sizes (1.2x base scale) */
+  --font-15: 98.4px;
+  --font-14: 90px;
+  --font-13: 82.8px;
+  --font-12: 74.4px;
+  --font-11: 67.2px;
+  --font-10: 63.6px;
+  --font-9: 54px;
+  --font-8: 45.6px;
+  --font-7: 38.4px;
+  --font-6: 32.4px;
+  --font-5: 27.6px;
+  --font-4: 22.8px;
+  --font-3: 19.2px;
+  --font-2: 16.8px;
+  --font-1: 14.4px;
+
+  /* Typography Base */
+  --base: 19.2px;
+  --line-height-normal: 1.5;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: white;
+  color: var(--COLOR-TEXT);
+  font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Scrolling Animations */
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.scroll-animation {
+  animation: scroll-left 20s linear infinite;
+}
+
+.ticker-animation {
+  animation: scroll-left 30s linear infinite;
 }
