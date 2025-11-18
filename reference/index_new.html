@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Horse Coffee - Premium Australian Coffee</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        * { font-family: 'Archivo', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif; }
+        html { scroll-behavior: smooth; }
+        @keyframes scroll-left {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .scroll-animation { animation: scroll-left 20s linear infinite; }
+        .ticker-animation { animation: scroll-left 30s linear infinite; }
+    </style>
+</head>
+<body class="bg-white text-[#2C2926] antialiased">
+
+    <!-- Announcement Bar -->
+    <div class="bg-[#030302] text-white text-center py-2.5 px-5 overflow-hidden whitespace-nowrap">
+        <div class="inline-block scroll-animation" style="font-size: 14.4px;">
+            <span class="inline-block mr-12">🎉 FREE SHIPPING ON ALL ORDERS OVER $50</span>
+            <span class="inline-block mr-12">☕ NEW: CANDY MOUNTAIN BLEND NOW AVAILABLE</span>
+            <span class="inline-block mr-12">⭐ SUBSCRIBE & SAVE 15% ON EVERY ORDER</span>
+            <span class="inline-block mr-12">🎉 FREE SHIPPING ON ALL ORDERS OVER $50</span>
+            <span class="inline-block mr-12">☕ NEW: CANDY MOUNTAIN BLEND NOW AVAILABLE</span>
+            <span class="inline-block mr-12">⭐ SUBSCRIBE & SAVE 15% ON EVERY ORDER</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-[#030302] text-white sticky top-0 z-50">
+        <div class="max-w-[1400px] mx-auto px-10 h-[84px] flex items-center justify-between">
+            <!-- Logo -->
+            <div class="flex items-center gap-2.5">
+                <i data-lucide="coffee" class="w-12 h-12" style="stroke-width: 1.5;"></i>
+                <div class="leading-tight" style="font-size: 16.8px; letter-spacing: 0.5px;">
+                    <div class="font-semibold">WHITE HORSE</div>
+                    <div class="font-normal text-sm opacity-90">COFFEE</div>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="flex gap-9" style="font-size: 16.8px;">
+                <a href="#shop" class="hover:opacity-70 transition-opacity uppercase">Shop</a>
+                <a href="#subscriptions" class="hover:opacity-70 transition-opacity uppercase">Subscriptions</a>
+                <a href="#wholesale" class="hover:opacity-70 transition-opacity uppercase">Wholesale</a>
+                <a href="#about" class="hover:opacity-70 transition-opacity uppercase">About</a>
+            </nav>
+
+            <!-- Icons -->
+            <div class="flex gap-5">
+                <a href="#account" class="hover:opacity-70 transition-opacity">
+                    <i data-lucide="user" class="w-5 h-5" style="stroke-width: 1.5;"></i>
+                </a>
+                <a href="#search" class="hover:opacity-70 transition-opacity">
+                    <i data-lucide="search" class="w-5 h-5" style="stroke-width: 1.5;"></i>
+                </a>
+                <a href="#cart" class="hover:opacity-70 transition-opacity">
+                    <i data-lucide="shopping-bag" class="w-5 h-5" style="stroke-width: 1.5;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=1600&h=900&fit=crop"
+             alt="Coffee beans"
+             class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black opacity-30"></div>
+        <div class="relative z-10 text-center text-white px-5" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.3);">
+            <h1 class="font-bold lowercase tracking-tight mb-2.5" style="font-size: 63.6px; line-height: 1.1;">
+                premium australian coffee
+            </h1>
+            <p class="opacity-95" style="font-size: 19.2px; letter-spacing: 2px;">
+                ROASTED FRESH, DELIVERED TO YOUR DOOR
+            </p>
+        </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="bg-white py-4 overflow-hidden border-b border-[#f0f0f0]">
+        <div class="flex gap-12 ticker-animation whitespace-nowrap" style="font-size: 16.8px;">
+            <span class="uppercase font-semibold tracking-wide">Single Origin</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Espresso Blends</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Cold Brew</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Decaf</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Single Origin</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Espresso Blends</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Cold Brew</span>
+            <span class="text-[#6b6967]">•</span>
+            <span class="uppercase font-semibold tracking-wide">Decaf</span>
+            <span class="text-[#6b6967]">•</span>
+        </div>
+    </div>
+
+    <!-- Product Categories -->
+    <section class="py-20 px-12 max-w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Category 1 -->
+            <a href="#" class="text-center group transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop"
+                     alt="Single Origin"
+                     class="w-full aspect-square object-cover mb-4">
+                <h3 class="font-semibold uppercase tracking-wide" style="font-size: 22.8px;">Single Origin</h3>
+            </a>
+
+            <!-- Category 2 -->
+            <a href="#" class="text-center group transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&h=400&fit=crop"
+                     alt="Espresso Blends"
+                     class="w-full aspect-square object-cover mb-4">
+                <h3 class="font-semibold uppercase tracking-wide" style="font-size: 22.8px;">Espresso Blends</h3>
+            </a>
+
+            <!-- Category 3 -->
+            <a href="#" class="text-center group transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop"
+                     alt="Cold Brew"
+                     class="w-full aspect-square object-cover mb-4">
+                <h3 class="font-semibold uppercase tracking-wide" style="font-size: 22.8px;">Cold Brew</h3>
+            </a>
+
+            <!-- Category 4 -->
+            <a href="#" class="text-center group transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=400&fit=crop"
+                     alt="Decaf"
+                     class="w-full aspect-square object-cover mb-4">
+                <h3 class="font-semibold uppercase tracking-wide" style="font-size: 22.8px;">Decaf</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="bg-[#F7F9FA] py-20 px-12">
+        <h2 class="text-center font-bold uppercase tracking-tight mb-20" style="font-size: 38.4px; letter-spacing: 1px;">
+            Best Sellers
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Product 1 -->
+            <div class="bg-white p-8 text-center transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=300&h=300&fit=crop"
+                     alt="White Knight Espresso"
+                     class="w-4/5 mx-auto mb-6">
+                <h3 class="font-semibold uppercase mb-2" style="font-size: 19.2px;">White Knight Espresso Blend</h3>
+                <p class="text-[#6b6967]" style="font-size: 16.8px;">From $19.00</p>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white p-8 text-center transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=300&h=300&fit=crop"
+                     alt="Ethiopian Yirgacheffe"
+                     class="w-4/5 mx-auto mb-6">
+                <h3 class="font-semibold uppercase mb-2" style="font-size: 19.2px;">Ethiopian Yirgacheffe</h3>
+                <p class="text-[#6b6967]" style="font-size: 16.8px;">From $24.00</p>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-white p-8 text-center transition-transform hover:-translate-y-1.5">
+                <div class="relative">
+                    <div class="absolute top-0 right-0 bg-[#f9dee5] text-[#af7b88] px-3 py-1 text-xs font-semibold uppercase">Sale</div>
+                    <img src="https://images.unsplash.com/photo-1587734195503-904a7b7ad3d0?w=300&h=300&fit=crop"
+                         alt="Candy Mountain"
+                         class="w-4/5 mx-auto mb-6">
+                </div>
+                <h3 class="font-semibold uppercase mb-2" style="font-size: 19.2px;">Candy Mountain Blend</h3>
+                <p class="text-[#6b6967]" style="font-size: 16.8px;">From $22.00</p>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="bg-white p-8 text-center transition-transform hover:-translate-y-1.5">
+                <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=300&h=300&fit=crop"
+                     alt="Colombian Supreme"
+                     class="w-4/5 mx-auto mb-6">
+                <h3 class="font-semibold uppercase mb-2" style="font-size: 19.2px;">Colombian Supreme</h3>
+                <p class="text-[#6b6967]" style="font-size: 16.8px;">From $21.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section id="subscriptions" class="py-24 px-12">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <!-- Image -->
+            <div class="h-[700px] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=700&fit=crop"
+                     alt="Coffee subscription"
+                     class="w-full h-full object-cover">
+            </div>
+
+            <!-- Content -->
+            <div class="py-20 px-12 lg:px-24">
+                <h2 class="font-bold tracking-tight mb-6" style="font-size: 45.6px; line-height: 1.2;">
+                    Never Run Out of Coffee
+                </h2>
+                <p class="mb-10 leading-relaxed text-[#6b6967]" style="font-size: 19.2px; line-height: 1.6;">
+                    Subscribe and save 15% on every order. Get fresh coffee delivered to your door on your schedule.
+                    Pause, skip, or cancel anytime.
+                </p>
+
+                <!-- Features -->
+                <div class="mb-10 space-y-8">
+                    <div class="flex gap-5 items-start">
+                        <i data-lucide="package" class="w-10 h-10 flex-shrink-0 text-[#e1b384]" style="stroke-width: 1.5;"></i>
+                        <div>
+                            <h3 class="font-semibold uppercase mb-1.5" style="font-size: 19.2px;">Ships Free Australia Wide</h3>
+                            <p class="text-[#6b6967]" style="font-size: 16.8px;">Free shipping on all coffee subscriptions.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 items-start">
+                        <i data-lucide="calendar" class="w-10 h-10 flex-shrink-0 text-[#e1b384]" style="stroke-width: 1.5;"></i>
+                        <div>
+                            <h3 class="font-semibold uppercase mb-1.5" style="font-size: 19.2px;">Your Schedule</h3>
+                            <p class="text-[#6b6967]" style="font-size: 16.8px;">Choose delivery frequency that works for you.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-5 items-start">
+                        <i data-lucide="refresh-cw" class="w-10 h-10 flex-shrink-0 text-[#e1b384]" style="stroke-width: 1.5;"></i>
+                        <div>
+                            <h3 class="font-semibold uppercase mb-1.5" style="font-size: 19.2px;">Flexible Subscriptions</h3>
+                            <p class="text-[#6b6967]" style="font-size: 16.8px;">Pause, skip, or cancel anytime with no fees.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="bg-[#030302] text-white px-5 py-2.5 uppercase font-semibold transition-all hover:bg-[#e1b384] hover:text-[#030302]"
+                        style="font-size: 16.8px; letter-spacing: 1px; border-radius: 3px;">
+                    Start Your Subscription
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Image -->
+        <div class="min-h-[600px]">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&h=800&fit=crop"
+                 alt="Coffee roasting"
+                 class="w-full h-full object-cover">
+        </div>
+
+        <!-- Content -->
+        <div class="bg-[#F7F9FA] py-20 px-12 lg:px-24 flex flex-col justify-center">
+            <h2 class="font-bold tracking-tight mb-6" style="font-size: 45.6px; line-height: 1.2;">
+                Roasted with Care in Melbourne
+            </h2>
+            <p class="mb-5 leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                White Horse Coffee is a specialty coffee roaster based in Melbourne, Australia. We source the finest
+                single-origin beans from around the world and roast them in small batches to bring out their unique flavors.
+            </p>
+            <p class="mb-5 leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                Our commitment to quality starts at the farm and continues through every step of the roasting process.
+                We work directly with farmers to ensure sustainable practices and fair compensation.
+            </p>
+            <p class="leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                Every bag of White Horse Coffee is roasted to order, ensuring maximum freshness when it arrives at your door.
+            </p>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Review 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+            <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=600&h=400&fit=crop"
+                 alt="Review"
+                 class="w-full h-full min-h-[400px] object-cover">
+            <div class="bg-[#fef8f0] p-14 flex flex-col justify-center">
+                <div class="text-[#e1b384] mb-5" style="font-size: 19.2px;">★★★★★</div>
+                <p class="mb-8 leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                    "The best coffee I've ever had. The Candy Mountain blend is absolutely incredible.
+                    Rich, smooth, and perfectly balanced."
+                </p>
+                <div class="font-semibold mb-1.5" style="font-size: 16.8px;">Sarah M.</div>
+                <div class="text-[#6b6967]" style="font-size: 14.4px;">Google Review</div>
+            </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+            <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&h=400&fit=crop"
+                 alt="Review"
+                 class="w-full h-full min-h-[400px] object-cover">
+            <div class="bg-white p-14 flex flex-col justify-center">
+                <div class="text-[#e1b384] mb-5" style="font-size: 19.2px;">★★★★★</div>
+                <p class="mb-8 leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                    "Subscription service is fantastic. Always arrives fresh, and the customer service
+                    team is incredibly helpful and responsive."
+                </p>
+                <div class="font-semibold mb-1.5" style="font-size: 16.8px;">James T.</div>
+                <div class="text-[#6b6967]" style="font-size: 14.4px;">Trustpilot Review</div>
+            </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=400&fit=crop"
+                 alt="Review"
+                 class="w-full h-full min-h-[400px] object-cover">
+            <div class="bg-white p-14 flex flex-col justify-center">
+                <div class="text-[#e1b384] mb-5" style="font-size: 19.2px;">★★★★★</div>
+                <p class="mb-8 leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                    "Exceptional quality and the packaging is beautiful. Makes a perfect gift for
+                    coffee lovers. Highly recommend the Ethiopian Yirgacheffe!"
+                </p>
+                <div class="font-semibold mb-1.5" style="font-size: 16.8px;">Emma K.</div>
+                <div class="text-[#6b6967]" style="font-size: 14.4px;">Product Review</div>
+            </div>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 min-h-[400px]">
+            <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop"
+                 alt="Review"
+                 class="w-full h-full min-h-[400px] object-cover">
+            <div class="bg-[#fef8f0] p-14 flex flex-col justify-center">
+                <div class="text-[#e1b384] mb-5" style="font-size: 19.2px;">★★★★★</div>
+                <p class="mb-8 leading-relaxed" style="font-size: 19.2px; line-height: 1.6;">
+                    "Fast shipping, amazing flavor profiles, and ethical sourcing. What more could
+                    you ask for? This is now my go-to coffee roaster."
+                </p>
+                <div class="font-semibold mb-1.5" style="font-size: 16.8px;">Michael R.</div>
+                <div class="text-[#6b6967]" style="font-size: 14.4px;">Facebook Review</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale Section -->
+    <section id="wholesale" class="grid grid-cols-1 lg:grid-cols-2">
+        <!-- Content -->
+        <div class="py-20 px-12 lg:px-24 flex flex-col justify-center">
+            <h2 class="font-bold tracking-tight mb-6" style="font-size: 45.6px; line-height: 1.2;">
+                Wholesale Enquiries
+            </h2>
+            <p class="mb-10 leading-relaxed text-[#6b6967]" style="font-size: 19.2px; line-height: 1.6;">
+                We partner with cafes, restaurants, and businesses across Australia. Get access to our full range of
+                premium coffees with dedicated account management and competitive pricing.
+            </p>
+
+            <div class="mb-10 space-y-8">
+                <div class="flex gap-5 items-start">
+                    <i data-lucide="truck" class="w-10 h-10 flex-shrink-0 text-[#e1b384]" style="stroke-width: 1.5;"></i>
+                    <div>
+                        <h3 class="font-semibold uppercase mb-1.5" style="font-size: 19.2px;">Regular Deliveries</h3>
+                        <p class="text-[#6b6967]" style="font-size: 16.8px;">Scheduled deliveries to keep your business stocked.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5 items-start">
+                    <i data-lucide="award" class="w-10 h-10 flex-shrink-0 text-[#e1b384]" style="stroke-width: 1.5;"></i>
+                    <div>
+                        <h3 class="font-semibold uppercase mb-1.5" style="font-size: 19.2px;">Premium Quality</h3>
+                        <p class="text-[#6b6967]" style="font-size: 16.8px;">Same exceptional quality as our retail offering.</p>
+                    </div>
+                </div>
+
+                <div class="flex gap-5 items-start">
+                    <i data-lucide="headphones" class="w-10 h-10 flex-shrink-0 text-[#e1b384]" style="stroke-width: 1.5;"></i>
+                    <div>
+                        <h3 class="font-semibold uppercase mb-1.5" style="font-size: 19.2px;">Dedicated Support</h3>
+                        <p class="text-[#6b6967]" style="font-size: 16.8px;">Personal account manager for all your needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="bg-[#030302] text-white px-5 py-2.5 uppercase font-semibold transition-all hover:bg-[#e1b384] hover:text-[#030302] w-fit"
+                    style="font-size: 16.8px; letter-spacing: 1px; border-radius: 3px;">
+                Request Wholesale Info
+            </button>
+        </div>
+
+        <!-- Image -->
+        <div class="min-h-[600px]">
+            <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&h=800&fit=crop"
+                 alt="Wholesale coffee"
+                 class="w-full h-full object-cover">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#030302] text-white pt-20 px-10 pb-10">
+        <div class="max-w-[1400px] mx-auto">
+            <!-- Main Footer Content -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16 mb-16">
+                <!-- Newsletter -->
+                <div>
+                    <h3 class="font-semibold uppercase mb-4" style="font-size: 22.8px; letter-spacing: 1px;">
+                        Newsletter
+                    </h3>
+                    <p class="mb-4 opacity-90" style="font-size: 16.8px;">
+                        Subscribe for exclusive offers and coffee brewing tips.
+                    </p>
+                    <form class="flex flex-col gap-4">
+                        <input type="email"
+                               placeholder="Email address"
+                               class="bg-transparent border-b border-white/30 px-3 py-3 text-white placeholder-white/60 outline-none focus:border-[#e1b384]"
+                               style="font-size: 16.8px;">
+                        <button type="submit"
+                                class="bg-white text-[#030302] px-4 py-4 font-semibold uppercase hover:bg-[#e1b384] transition-colors"
+                                style="font-size: 16.8px; letter-spacing: 1px;">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-semibold uppercase mb-4" style="font-size: 22.8px; letter-spacing: 1px;">
+                        Quick Links
+                    </h3>
+                    <div class="flex flex-col gap-4">
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">About Us</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Brewing Guides</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Subscription FAQ</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Contact Us</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Wholesale</a>
+                    </div>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="font-semibold uppercase mb-4" style="font-size: 22.8px; letter-spacing: 1px;">
+                        Customer Service
+                    </h3>
+                    <div class="flex flex-col gap-4">
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Shipping & Returns</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Privacy Policy</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Terms of Service</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Track Order</a>
+                        <a href="#" class="opacity-90 hover:opacity-100 transition-opacity" style="font-size: 16.8px;">Refund Policy</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-white/20 pt-10 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="opacity-70" style="font-size: 16.8px;">
+                    © 2024 White Horse Coffee. All rights reserved.
+                </p>
+
+                <!-- Payment Icons -->
+                <div class="flex gap-2.5">
+                    <div class="bg-white rounded-sm w-10 h-6 flex items-center justify-center text-[#030302] text-[10px] font-semibold">VISA</div>
+                    <div class="bg-white rounded-sm w-10 h-6 flex items-center justify-center text-[#030302] text-[10px] font-semibold">MC</div>
+                    <div class="bg-white rounded-sm w-10 h-6 flex items-center justify-center text-[#030302] text-[10px] font-semibold">AMEX</div>
+                    <div class="bg-white rounded-sm w-10 h-6 flex items-center justify-center text-[#030302] text-[10px] font-semibold">PAY</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
