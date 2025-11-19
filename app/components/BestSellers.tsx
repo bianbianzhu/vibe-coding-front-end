@@ -43,7 +43,14 @@ export default function BestSellers() {
 
   const item = {
     hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: 'easeOut' as const,
+      },
+    },
   };
 
   return (
@@ -70,7 +77,8 @@ export default function BestSellers() {
           <motion.div
             key={product.name}
             variants={item}
-            className="bg-white p-8 text-center transition-transform hover:-translate-y-1.5"
+            whileHover={{ y: -6 }}
+            className="bg-white p-8 text-center"
           >
             <div className="relative">
               {product.onSale && (
