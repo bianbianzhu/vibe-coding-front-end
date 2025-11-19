@@ -35,7 +35,14 @@ export default function ProductCategories() {
 
   const item = {
     hidden: { opacity: 0, y: 20 },
-    show: { opacity: 1, y: 0 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: 'easeOut' as const,
+      },
+    },
   };
 
   return (
@@ -52,7 +59,8 @@ export default function ProductCategories() {
             key={category.name}
             variants={item}
             href="#"
-            className="text-center group transition-transform hover:-translate-y-1.5"
+            whileHover={{ y: -6 }}
+            className="text-center group"
           >
             <div className="relative w-full aspect-square mb-4">
               <Image
