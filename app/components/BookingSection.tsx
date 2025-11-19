@@ -142,6 +142,7 @@ export default function BookingSection() {
                 onChange={setSelectedDate}
                 value={selectedDate}
                 minDate={new Date()}
+                locale="en-US"
                 tileDisabled={({ date }) => isDateUnavailable(date)}
                 tileClassName={({ date }) =>
                   isDateUnavailable(date) ? 'unavailable-date' : ''

@@ -5,13 +5,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Calendar, Clock, User, Sparkles } from 'lucide-react';
 
 export default function BookingDemo() {
-  const [isVisible, setIsVisible] = useState(() => {
-    // Check if demo was already seen
-    if (typeof window !== 'undefined') {
-      return !localStorage.getItem('bookingDemoSeen');
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const seen = localStorage.getItem('bookingDemoSeen');
+    if (!seen) {
+      setIsVisible(true);
     }
-    return false;
-  });
+  }, []);
   const [step, setStep] = useState(0);
   const [selectedDate, setSelectedDate] = useState<number | null>(null);
   const [selectedTime, setSelectedTime] = useState<string | null>(null);
