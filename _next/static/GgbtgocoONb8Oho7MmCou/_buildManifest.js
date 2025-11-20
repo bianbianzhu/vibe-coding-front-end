@@ -1,7 +1,12 @@
 self.__BUILD_MANIFEST = {
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/agentic-ui-design//_next/:path+",
+        "destination": "/vibe-coding-front-end/_next/:path+"
+      }
+    ],
     "fallback": []
   },
   "sortedPages": [
