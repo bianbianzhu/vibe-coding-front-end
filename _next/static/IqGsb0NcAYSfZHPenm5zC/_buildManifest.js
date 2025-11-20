@@ -3,7 +3,7 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/agentic-ui-design//_next/:path+",
+        "source": "/vibe-coding-front-end//_next/:path+",
         "destination": "/vibe-coding-front-end/_next/:path+"
       }
     ],
