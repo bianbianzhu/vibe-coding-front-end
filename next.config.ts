@@ -5,7 +5,7 @@ const isProd = process.env.NODE_ENV === "production";
 const nextConfig: NextConfig = {
   output: "export",
   basePath: isProd ? "/vibe-coding-front-end" : "",
-  assetPrefix: isProd ? "/agentic-ui-design/" : "",
+  assetPrefix: isProd ? "/vibe-coding-front-end/" : "",
   images: {
     unoptimized: true,
     remotePatterns: [
